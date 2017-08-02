@@ -15,6 +15,7 @@ do i=1,N
 end do
 
 print *, 'a = ', (a(i), i=1,10)
+print *, ''
 
 !manual
 do i = 1, N
@@ -29,7 +30,7 @@ do i = 1, N
 a(i) = i*1.0
 end do
 
-call kernel_wrapper(a, b, N)
+call vectoraddwrapper(a, b, N)
 print*, 'GPU computation'
 print *, 'a + 2 = ', (a(i), i=1,10)
 
