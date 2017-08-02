@@ -1,4 +1,4 @@
-program fortest
+program callcuda
 
 ! simple program which creates 2 vectors and adds them in a 
 ! cuda function
@@ -34,5 +34,5 @@ call vectoraddwrapper(a, b, N)
 print*, 'GPU computation'
 print *, 'a + 2 = ', (a(i), i=1,10)
 
-end program fortest
+end program callcuda
 
